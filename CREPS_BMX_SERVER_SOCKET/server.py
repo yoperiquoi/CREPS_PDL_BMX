@@ -167,7 +167,7 @@ def end_race_event(sid, data) :
     df.to_csv('./race_record.csv', index=None)
 
     files = {'file': open('./race_record.csv','r')}
-    r = requests.post('http://51.75.124.195:5000/file-upload', files=files)
+    r = requests.post('http://127.0.0.1:5000/file-upload', files=files)
 
     df = init_record_df()
 
