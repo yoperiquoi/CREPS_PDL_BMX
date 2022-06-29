@@ -12,13 +12,13 @@ import { SafeAreaView } from "react-native";
 import SensorList from "./src/SensorList";
 
 /*
-En l'absence de balise capteur dédiés, un téléphone est un moyen rapide d'avoir accès à la géolocalisation ainsi qu'au
-gyroscope, accelerometer et magnetometer (ses derniers ne sont cependant pas précis sur des téléphone bas de gamme, genre 
+En l'absence de balises capteur dédiés, un téléphone est un moyen rapide d'avoir accès à la géolocalisation ainsi qu'au
+gyroscope, accelerometer et magnetometer (ses derniers ne sont cependant pas précis sur des téléphones bas de gamme, genre 
   les xiaomi de l'IMT. cependant leurs GPS sont corrects donc ils sont utilisables comme balise fixe).
 */
 
 /*
-Le code ci dessous à été écrit dans le but d'avoir une preuve de concept rapide dans un contexte où l'utilisation de 
+Le code ci-dessous a été écrit dans le but d'avoir une preuve de concept rapide dans un contexte où l'utilisation de 
 téléphone est temporaire.
 Le code n'est donc pas optimisé, factorisé et plutôt moche. Merci de votre compréhension.
 */
