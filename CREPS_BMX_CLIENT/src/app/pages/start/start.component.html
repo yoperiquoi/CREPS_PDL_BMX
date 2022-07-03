@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <h2>Piste : {{K_NOM}}</h2>
+    <div class="if" *ngIf="!isFinished">
+        <div class="content">
+            <h1>Nombre de capteurs connectés </h1>
+            <div class="coureurs">
+             <strong>{{coureurs.length}}</strong> 
+            </div>
+            <div class="coureur" *ngFor="let coureur of coureurs">{{coureur.username}} <img src="../../../assets/bike.svg" *ngIf="coureur.username.includes(SensorType.VELO)"> <img src="../../../assets/sensor.svg" *ngIf="coureur.username.includes(SensorType.RELAI)"> </div>
+    
+        </div>
+    
+        <div class="start" *ngIf="!isStarted" (click)="startCourse()">
+            Commencer la course
+        </div>
+        <div class="end" *ngIf="isStarted" (click)="endCourse()">
+            Finir la course
+        </div>
+    </div>
+    <div *ngIf="isFinished" (click)="re()" class="re">Refaire la même piste.</div>
+</div>

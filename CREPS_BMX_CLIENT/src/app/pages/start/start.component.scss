@@ -1,0 +1,60 @@
+.start, .end {
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    background-color: #2ecc71;
+    padding: 20px 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+.end{
+    background: #e74c3c;
+}
+
+.re{
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 30%;
+    margin-left: 30%;
+}
+
+.wrapper {
+    position: relative;
+    height: calc(100vh - 40px);
+}
+
+h2 {
+    padding: 10px;
+}
+
+.content{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+        font-size: 20px;
+    }
+
+    .coureurs {
+        color: #394AE8;
+        font-size: 60px;
+        text-align: center;
+    }
+
+}
+
+.coureur{
+    background: #D9D9D9;
+    font-weight: bold;
+    width: 95%;
+    margin: 0 auto;
+    padding:  30px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

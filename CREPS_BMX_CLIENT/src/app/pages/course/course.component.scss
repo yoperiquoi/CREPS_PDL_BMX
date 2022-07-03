@@ -1,0 +1,59 @@
+.add {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    background: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.save{
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    color: white;
+    background: #394AE8;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+    width: 90%;
+    text-align: center;
+}
+
+.clear{
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    background: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.content{
+    position: relative;
+}
+
+.content__header{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(100px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 5px;
+    z-index: 2;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+}

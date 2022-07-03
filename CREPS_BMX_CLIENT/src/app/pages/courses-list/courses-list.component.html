@@ -1,0 +1,13 @@
+<section class="courses-list">
+    <h2>Vos courses</h2>
+    <p class="delete" (click)="isDeleting = !isDeleting" >Supprimer une course</p>
+    <div class="list">  
+        <div class="course" *ngFor="let marker of data; let i = index" (click)="goTo(i, marker['K_ID'])">
+            <p>{{marker['K_NOM']}}</p>
+            <div class="delete__course" *ngIf="isDeleting" >
+                <img src="../../../assets/trash.svg">
+                <p>Supprimer</p>
+            </div>
+        </div>
+    </div>
+</section>

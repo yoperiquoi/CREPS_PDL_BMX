@@ -1,0 +1,37 @@
+<div class="content">
+    <div class="content__header">
+        <div class="start">Départ : <strong>{{totalStart}}/2</strong> </div>
+        <div class="end">Arrivée : <strong>{{totalEnd}}/2</strong></div>
+    </div>
+    <google-map #map [options]="options" (mapClick)="createMarker($event)">
+        <map-marker
+
+        *ngFor="let marker of markers"
+        [position]="marker.position"
+        [label]="marker.label"
+        [title]="marker.title"
+      >
+      </map-marker>
+    </google-map>
+    <mat-menu #menu="matMenu" yPosition="above">
+        <button mat-menu-item (click)="setMarker(markerType['START'])">
+          <span  >Départ</span>
+        </button>
+        <button mat-menu-item (click)="setMarker(markerType['END'])">
+          <span >Arrivée</span>
+        </button>
+    </mat-menu>
+    <div class="add" [matMenuTriggerFor]="menu" *ngIf="!(totalEnd == 2 && totalStart == 2)" >
+        Ajouter balise +
+    </div>
+
+    <div class="input" *ngIf="totalEnd == 2 && totalStart == 2">
+        <label>Nom de la course :</label>
+        <input type="text" placeholder="Exemple : Piste Nantes" #input>
+    </div>
+    <div class="save" *ngIf="totalEnd == 2 && totalStart == 2" (click)="saveCourse()">Sauvegarder & continuer</div>
+    <div class="clear" (click)="reset()">Supprimer</div>
+</div>
+
+
+  

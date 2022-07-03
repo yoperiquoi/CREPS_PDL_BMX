@@ -1,0 +1,19 @@
+<div class="content">
+    <div class="content__header">
+        <div class="start">Départ : <strong>2/2</strong> </div>
+        <div class="end">Arrivée : <strong>2/2</strong></div>
+    </div>
+    <google-map #map [options]="options">
+        <map-marker
+        *ngFor="let marker of markers"
+        [position]="marker.position"
+        [label]="marker.label"
+        [title]="marker.title"
+      >
+      </map-marker>
+    </google-map>
+    <div class="save" (click)="start()" >Continuer</div>
+</div>
+
+
+  
