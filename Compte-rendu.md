@@ -20,6 +20,8 @@ Un IMU est l’association de plusieurs capteurs : Accéléromètre, Gyroscope e
 
 L’idée de la solution avec l’IMU est de compiler les données des capteurs pour tracer une trajectoire. La première difficulté est de traiter les données récupérées en ajoutant un filtre afin d’avoir des données exploitables.
 
+Les différents essais sur le traitement des données de l'IMU (filtre, processing via rotation & quaternions) sont disponibles dans le répertoire IMU_TESTS.
+
 ## GPS
 
 Une acquisition GPS permet de facilement récupérer les coordonnées des sportifs et de déterminer le franchissement de la ligne d’arrivée. Cependant, les données GPS sont soumises à une erreur due à l’acquisition satellites et aux différentes régulations gouvernementales. Afin de compenser cette erreur intrinsèque, plusieurs pistes ont été explorées.
