@@ -26,6 +26,8 @@ Les différents essais sur le traitement des données de l'IMU (filtre, processi
 
 Une acquisition GPS permet de facilement récupérer les coordonnées des sportifs et de déterminer le franchissement de la ligne d’arrivée. Cependant, les données GPS sont soumises à une erreur due à l’acquisition satellites et aux différentes régulations gouvernementales. Afin de compenser cette erreur intrinsèque, plusieurs pistes ont été explorées.
 
+Nous avons décidé de récupérer la solution qui avait été exploré pendant le hackaton pour mettre en place le GPS différentiel. Seulement nous n'avons pas eu le temps de mettre en place ce traitement, je vous invite donc à récupérer la documentation du hackaton fait à l'IMT Atlantique en 2022 et d'observer les résultat du groupe : Poussière d'étoile Project https://github.com/pH0xe/IMT-HACKATHON.
+
 # Solution d’arrivée
 
 ## Transpondeur et capteur RFID
